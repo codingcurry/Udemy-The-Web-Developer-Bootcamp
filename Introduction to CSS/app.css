@@ -1,9 +1,17 @@
 h1 {
 	color:rgb(200,25,185);
+	border: #F4D1AA 3px solid
 }
 h4 {
-	color:rgba(10,225,240,.5);
+	color:rgba(10,225,240,.8);
 }
 li {
 	color:#F00511;
+	background: rgba(10,50,10,.3);
+}
+
+body {
+	background: url(https://images.pexels.com/photos/122458/pexels-photo-122458.jpeg?auto=compress&cs=tinysrgb&h=350);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
