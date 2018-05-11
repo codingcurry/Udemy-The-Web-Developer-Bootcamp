@@ -1,0 +1,10 @@
+li {
+	background: red;
+}
+.list {
+	text-decoration: line-through;
+}
+#important {
+	text-decoration: underline overline;
+	background: yellow
+}
