@@ -1,6 +1,12 @@
 td {
 	padding: 50px;
 }
+table {
+	margin: 0 auto
+}
+h1 {
+	text-align: center;
+}
 
 .topBottom {
 	border-left: 1px solid black;
