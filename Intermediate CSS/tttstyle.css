@@ -1,0 +1,17 @@
+td {
+	padding: 50px;
+}
+
+.topBottom {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.leftRight {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#center {
+	border: 1px solid black;
+}
