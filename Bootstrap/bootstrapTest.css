@@ -1,3 +1,9 @@
 .jumbotron {
 	background: #E1E1F1;
 }
+
+.title {
+	color: #a1a1F1;
+	font-weight: 700;
+	font-size: 28px;
+}
