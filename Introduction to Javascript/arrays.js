@@ -26,3 +26,14 @@ function sumArray(arr) {
 	}
 	return sum;
 }
+
+function max(arr) {
+
+	let max = arr[0];
+	arr.forEach(function(number) {
+		if(number>max) {
+			max = number;
+		}
+	});
+	return max;
+}
