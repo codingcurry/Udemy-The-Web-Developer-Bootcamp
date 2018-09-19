@@ -1,0 +1,8 @@
+.hover {
+	color: green;
+	text-decoration: underline;
+}
+.complete {
+	color: grey;
+	text-decoration: line-through;
+}
