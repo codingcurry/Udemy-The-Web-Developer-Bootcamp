@@ -9,6 +9,7 @@ let colors = [
 let squares = document.querySelectorAll(".square");
 let pickedColor = colors[Math.floor(Math.random()*6)];
 let rgbDisplay = document.querySelector("#rgbCode");
+let message = document.querySelector("#message");
 
 rgbDisplay.textContent = pickedColor;
 for(let i=0; i<squares.length; i++) {
@@ -20,10 +21,19 @@ for(let i=0; i<squares.length; i++) {
 	squares[i].addEventListener("click",function() {
 		//if clicked color is the pickedColor
 		if(this.style.backgroundColor===pickedColor) {
-			alert("CORRECT");
+			message.textContent="CORRECT";
+			changeColor(pickedColor);
 		}
 		else {
-			alert("WRONG");
+			this.style.backgroundColor="#2b2b2b"
+			message.textContent="Try Again";
 		}
 	});
+}
+
+//change all squares to passed in color
+function changeColor(color) {
+	for(let i=0; i<squares.length; i++) {
+		squares[i].style.backgroundColor=color;
+	}
 }

@@ -4,6 +4,9 @@ body {
 h1 {
 	color: #d7d7d7;
 }
+span {
+	color: #d7d7d7;
+}
 .square {
 	width: 30%;
 	padding-bottom: 30%;
