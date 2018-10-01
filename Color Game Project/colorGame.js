@@ -1,15 +1,9 @@
-let colors = [
-	"rgb(255, 0, 0)",
-	"rgb(0, 255, 0)",
-	"rgb(0, 0, 255)",
-	"rgb(255, 255, 0)",
-	"rgb(255, 0, 255)",
-	"rgb(0, 255, 255)",
-];
+let colors = generateRandomColors(6);	
 let squares = document.querySelectorAll(".square");
 let pickedColor = pickColor();
 let rgbDisplay = document.querySelector("#rgbCode");
 let message = document.querySelector("#message");
+let h1 = document.querySelector("h1");
 
 rgbDisplay.textContent = pickedColor;
 for(let i=0; i<squares.length; i++) {
@@ -23,6 +17,7 @@ for(let i=0; i<squares.length; i++) {
 		if(this.style.backgroundColor===pickedColor) {
 			message.textContent="CORRECT";
 			changeColor(pickedColor);
+			h1.style.backgroundColor=pickedColor;
 		}
 		else {
 			this.style.backgroundColor="#2b2b2b"
@@ -41,4 +36,23 @@ function changeColor(color) {
 //random color depending on number of colors available
 function pickColor() {
 	return colors[Math.floor(Math.random() * colors.length)];
+}
+
+
+//populate array with random colors depending on amount specified
+function generateRandomColors(num) {
+	let tmpArray = [];
+	for(let i=0; i<num; i++) {
+		tmpArray.push(randomColor());
+	}
+	return tmpArray;
+}
+
+//generates a string containing a random rgb code for a color
+function randomColor() {
+	const f = 0;
+	let red = Math.floor(Math.random()*256);
+	let green = Math.floor(Math.random()*256);
+	let blue = Math.floor(Math.random()*256);
+	return "rgb(" + red + ", " + green + ", " + blue + ")";
 }
