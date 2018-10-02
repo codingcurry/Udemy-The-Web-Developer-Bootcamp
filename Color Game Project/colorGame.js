@@ -4,6 +4,18 @@ let pickedColor = pickColor();
 let rgbDisplay = document.querySelector("#rgbCode");
 let message = document.querySelector("#message");
 let h1 = document.querySelector("h1");
+let resetButton = document.querySelector("#reset");
+
+resetButton.addEventListener("click", function() {
+	colors=generateRandomColors(6);
+	pickedColor=pickColor();
+	rgbDisplay.textContent=pickedColor;
+	for(let i=0; i<squares.length; i++) {
+		squares[i].style.backgroundColor=colors[i];
+	}
+	h1.style.backgroundColor="#2b2b2b";
+	message.textContent="Play";
+});
 
 rgbDisplay.textContent = pickedColor;
 for(let i=0; i<squares.length; i++) {
@@ -18,6 +30,7 @@ for(let i=0; i<squares.length; i++) {
 			message.textContent="CORRECT";
 			changeColor(pickedColor);
 			h1.style.backgroundColor=pickedColor;
+			resetButton.textContent="Play Again?";
 		}
 		else {
 			this.style.backgroundColor="#2b2b2b"
