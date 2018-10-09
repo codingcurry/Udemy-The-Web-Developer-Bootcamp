@@ -16,7 +16,7 @@ resetButton.addEventListener("click", function() {
 	for(let i=0; i<squares.length; i++) {
 		squares[i].style.backgroundColor=colors[i];
 	}
-	h1.style.backgroundColor="#2b2b2b";
+	h1.style.backgroundColor="steelblue";
 	message.textContent="Play";
 });
 
@@ -33,7 +33,7 @@ hard.addEventListener("click", function() {
 		}
 		squares[i].style.backgroundColor=colors[i];
 	}
-	h1.style.backgroundColor="#2b2b2b";
+	h1.style.backgroundColor="steelblue";
 	message.textContent="Play";
 });
 
@@ -52,7 +52,7 @@ easy.addEventListener("click", function() {
 			squares[i].style.display="none";
 		}
 	}
-	h1.style.backgroundColor="#2b2b2b";
+	h1.style.backgroundColor="steelblue";
 	message.textContent="Play";
 });
 
