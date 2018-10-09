@@ -17,7 +17,8 @@ resetButton.addEventListener("click", function() {
 		squares[i].style.backgroundColor=colors[i];
 	}
 	h1.style.backgroundColor="steelblue";
-	message.textContent="Play";
+	message.textContent="";
+	this.textContent="New Colors";
 });
 
 hard.addEventListener("click", function() {
@@ -34,7 +35,7 @@ hard.addEventListener("click", function() {
 		squares[i].style.backgroundColor=colors[i];
 	}
 	h1.style.backgroundColor="steelblue";
-	message.textContent="Play";
+	message.textContent="";
 });
 
 easy.addEventListener("click", function() {
@@ -53,7 +54,7 @@ easy.addEventListener("click", function() {
 		}
 	}
 	h1.style.backgroundColor="steelblue";
-	message.textContent="Play";
+	message.textContent="";
 });
 
 hard.classList.add("selected");
