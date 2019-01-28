@@ -1,3 +1,8 @@
 body {
 	background: pink;
 }
+#container {
+	background: steelblue;
+	width: 360px;
+	margin: 0 auto;
+}
