@@ -1,8 +1,14 @@
 body {
 	background: pink;
 }
+
 #container {
-	background: steelblue;
+	background: lightblue;
 	width: 360px;
 	margin: 0 auto;
+}
+
+.crossed-out {
+	color: grey;
+	text-decoration: line-through;
 }
