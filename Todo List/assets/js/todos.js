@@ -14,7 +14,7 @@ $('ul').on("click", "span", function(event) {
 //add new items in text input
 $('input[type="text"]').keypress(function(event) {
 	if(event.which===13) {
-		$('ul').append("<li><span>X</span> " + $(this).val() + "</li>");
+		$('ul').append("<li><span><i class='fas fa-trash'></i></span> " + $(this).val() + "</li>");
 		$(this).val("");
 	}
 });
