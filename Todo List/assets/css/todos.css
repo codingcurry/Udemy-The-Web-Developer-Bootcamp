@@ -40,7 +40,6 @@ li {
 	color: #454545;
 	height: 36px;
 	line-height: 36px;
-	padding-left: 10px;
 }
 
 li:nth-child(2n) {
@@ -64,4 +63,20 @@ input:focus {
 
 .fa-plus-circle {
 	float: left;
+}
+
+span {
+	background: #90342a;
+	color: #eeeeee;
+	width:0;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	opacity: 0;
+	transition: .1s linear;
+}
+
+li:hover span{
+	width: 36px;
+	opacity: 1;
 }
