@@ -1,14 +1,59 @@
 body {
 	background: pink;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #container {
-	background: lightblue;
 	width: 360px;
-	margin: 0 auto;
+	margin: 100px auto;
+	background: #eeeeee;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+	border-radius: 10px;
 }
 
 .crossed-out {
 	color: grey;
 	text-decoration: line-through;
+}
+
+h1 {
+	background: #024176;
+	color: #fafafa;
+	margin: 0 0;
+	padding: 10px 20px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+ul {
+	margin: 0 0;
+	padding: 0 0;
+	list-style: none;
+}
+
+li {
+	background: #fafafa;
+	color: #454545;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 10px;
+}
+
+li:nth-child(2n) {
+	background: #eeeeee;
+}
+
+input {
+	background: #eeeeee;
+	color: #305ad7;
+	font-size: 16px;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	box-sizing: border-box;
+}
+
+input:focus {
+	background: #eeeeee;
+	border: 3px solid #305ad7;
+	outline: none;
 }
