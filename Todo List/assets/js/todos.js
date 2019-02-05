@@ -18,3 +18,8 @@ $('input[type="text"]').keypress(function(event) {
 		$(this).val("");
 	}
 });
+
+//toggle new item input
+$('.fa-plus-circle').on("click", function() {
+	$('input[type="text"]').fadeToggle();
+})
